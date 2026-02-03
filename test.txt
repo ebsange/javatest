@@ -1,0 +1,15 @@
+public String format (String songInfo) {
+    int x = songInfo.indexOf("-");
+    String artistnanme = songInfo.substring(x);
+    int y = songInfo.indexOf("-", x + 1);
+    String title = songInfo.substring(y, songInfo.length)
+    String final = title + " " + "by" + " " + artistnanme
+}
+
+s="stacey-is-thebest"
+int a = s.indexOf("-") #6
+
+int b = s.indexOf("-", 7)
+
+s.substring(6, 10)
+s.substring(6)
