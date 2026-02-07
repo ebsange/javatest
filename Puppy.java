@@ -1,31 +1,13 @@
-public class Puppy {
-    //instance variable
-    private int age;
-    private String name;
-    private String color;
-    private static String status = "live";
- 
-    // 构造器constrctor with parameter
+public class Puppy extends dog {
     public Puppy(String newName, int newAge, String newColor) {
-        name = newName;
-        age = newAge;
-        color = newColor;
+        super(newName, newAge, newColor);
     }
 
-
-    //overload
-    public void addAge(int newAge) {
-        age += newAge;
+    public String getColor() {
+        return "subColor";
     }
 
-    public double addAge(double newAge) {
-        age += newAge;
-        return age;
+    public String test() {
+        return "yes";
     }
-
-    public int getAge() {
-        return age;
-    }
-
-
 }

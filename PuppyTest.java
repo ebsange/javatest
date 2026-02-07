@@ -1,10 +1,11 @@
 public class PuppyTest {
     // client class
     public static void main(String[] args) {
-        //初始化object
-       Puppy a = new Puppy("a", 4, "black");
-       Puppy b = a;
-       a.addAge(5);
-       System.out.println(b.getAge());
+        dog a = new dog("a", 3, "yellow");
+        dog b = new Puppy("b", 4, "black");
+        Puppy c = new Puppy("c", 5, "white");
+        System.out.println(c.getColor());
+        //System.out.println(c.getName());
+        //System.out.println(c.getColor());
     }
 }
