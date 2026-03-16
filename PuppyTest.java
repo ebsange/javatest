@@ -1,11 +1,17 @@
 public class PuppyTest {
-    // client class
+    // 主方法
     public static void main(String[] args) {
-        dog a = new dog("a", 3, "yellow");
-        dog b = new Puppy("b", 4, "black");
-        Puppy c = new Puppy("c", 5, "white");
-        System.out.println(c.getColor());
-        //System.out.println(c.getName());
-        //System.out.println(c.getColor());
+        // 创建对象
+        Puppy myPuppy = new Puppy("Tommy");
+ 
+        // 通过方法来设定 age
+        myPuppy.setAge(2);
+ 
+        // 调用另一个方法获取 age
+        int age = myPuppy.getAge();
+        System.out.println("小狗的年龄为 : " + age);
+ 
+        // 也可以直接访问成员变量（通过 getter 方法）
+        System.out.println("变量值 : " + myPuppy.getAge());
     }
 }
