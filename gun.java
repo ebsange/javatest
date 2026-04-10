@@ -6,9 +6,9 @@ public class gun {
     private final int y = 4;
 
     //constructor with parameter
-    public gun(int bulletNum, double harm) {
+    public gun(int bulletNum, double harmful) {
         this.bulletNum = bulletNum;
-        this.harm = harm;
+        harm = harmful;
     }
 
     //non-argument constructor
@@ -24,12 +24,14 @@ public class gun {
     }
 
     public double hurt (double gunHarm) {
-        harm *= gunHarm;
+        double newHarm = gunHarm;
+        harm *= newHarm;
         return harm;
     }
 
+    //accessor
     public void getBullet() {
-        System.out.println(bulletNum);
+        System.out.println(bulletNum + "");
     }
 
     public static String test() {
